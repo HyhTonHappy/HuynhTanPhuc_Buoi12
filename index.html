@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý mảng số nguyên</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Nhập mảng số nguyên</h2>
+      <div class="form-group">
+        <label for="numberInput">Nhập một số nguyên:</label>
+        <input type="number" id="numberInput" class="form-control" />
+      </div>
+      <button onclick="addToArray()" class="btn btn-primary">Thêm vào mảng</button>
+      <button onclick="clearArray()" class="btn btn-danger">Xóa mảng</button>
+      <h3>Mảng hiện tại:</h3>
+      <p id="arrayDisplay"></p>
+
+      <h3>Chọn chức năng</h3>
+      <select id="functionSelect" class="form-control">
+        <option value="1">Tổng các số dương trong mảng</option>
+        <option value="2">Đếm số dương trong mảng</option>
+        <option value="3">Tìm số nhỏ nhất trong mảng</option>
+        <option value="4">Tìm số dương nhỏ nhất trong mảng</option>
+        <option value="5">Tìm số chẵn cuối cùng trong mảng</option>
+        <option value="6">Đổi chỗ 2 giá trị trong mảng</option>
+        <option value="7">Sắp xếp mảng theo thứ tự tăng dần</option>
+        <option value="8">Tìm số nguyên tố đầu tiên trong mảng</option>
+        <option value="9">Nhập mảng số thực và tìm số nguyên</option>
+        <option value="10">So sánh số lượng số dương và số lượng số âm</option>
+      </select>
+
+      <div id="extraInput" class="form-group" style="margin-top: 15px;"></div>
+
+      <button onclick="executeFunction()" class="btn btn-success">Thực hiện</button>
+
+      <h3>Kết quả</h3>
+      <p id="result"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
